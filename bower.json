@@ -1,0 +1,23 @@
+{
+  "name": "linkdd.github.com",
+  "authors": [
+    "David Delassus <david.jose.delassus@gmail.com>"
+  ],
+  "description": "personal website",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.2.0",
+    "require-css": "^0.1.8",
+    "AdminLTE": "adminlte#^2.3.3",
+    "font-awesome": "^4.6.3"
+  }
+}
