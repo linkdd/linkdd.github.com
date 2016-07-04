@@ -42,7 +42,7 @@ require.config({
                 'css!bower_components/AdminLTE/bootstrap/css/bootstrap.css',
                 'css!bower_components/font-awesome/css/font-awesome.css',
                 'css!bower_components/AdminLTE/dist/css/AdminLTE.css',
-                'css!bower_components/AdminLTE/dist/css/skins/_all-skins.css'
+                'css!bower_components/AdminLTE/dist/css/skins/skin-blue.css'
             ]
         }
     }
