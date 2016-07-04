@@ -32,7 +32,7 @@ define([
                 if (evt.type === 'PushEvent') {
                     var nb_commit = evt.payload.commits.length;
 
-                    icon = 'fa fa-upload';
+                    icon = 'fa fa-upload bg-green-active';
                     title = 'Push ' + nb_commit + ' commit(s) ';
                     title += 'on <a href="' + evt.repo.url + '">' + evt.repo.name + '</a>';
 
@@ -51,19 +51,21 @@ define([
                     icon = 'fa fa-flag';
 
                     if (evt.payload.ref_type == 'tag') {
+                        icon += ' bg-aqua';
                         title = 'Create tag <span class="label label-warning">' + evt.payload.ref + '</span> ';
                         title += 'on <a href="' + evt.repo.url + '">' + evt.repo.name + '</a>';
                     }
                     else if(evt.payload.ref_type == 'branch') {
+                        icon += ' bg-purple';
                         title = 'Create branch <span class="label label-warning">' + evt.payload.ref + '</span> ';
                         title += 'on <a href="' + evt.repo.url + '">' + evt.repo.name + '</a>';
                     }
                     else if(evt.payload.ref_type == 'repository') {
-                        icon = 'fa fa-code';
+                        icon = 'fa fa-code bg-red';
                         title = 'Create repository <a href="' + evt.repo.url + '">' + evt.repo.name + '</a>';
                     }
-                    description = evt.payload.description;
 
+                    description = evt.payload.description;
                 }
 
                 eventsByDate[date].push({
