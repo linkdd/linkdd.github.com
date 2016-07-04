@@ -1,0 +1,40 @@
+<div data-bind="visible: active">
+    <section class="content-header">
+        <h1>Blog</h1>
+    </section>
+
+    <section class="content" data-bind="foreach: articles">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12">
+                <div class="box box-info collapsed-box">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">
+                            <button class="btn btn-box-tool" type="button" data-widget="collapse">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                            <a data-bind="text: $data.title, attr: { href: $data.link }"></a>
+                        </h3>
+
+                        <div class="box-tools pull-right">
+                            <span data-bind="foreach: $data.tags">
+                                <span class="label label-default" data-bind="text: $data"></span>
+                            </span>
+                            <span class="label label-success" data-bind="text: moment($data.published).fromNow()"></span>
+                        </div>
+                    </div>
+
+                    <div class="box-body article" data-bind="html: $data.content">
+                    </div>
+
+                    <div class="box-footer">
+                        <span class="pull-right">
+                            Last updated:
+                            <span class="label label-default" data-bind="text: moment($data.updated).fromNow()"></span>
+                        </span>
+                        <span data-bind="text: $data.rights"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

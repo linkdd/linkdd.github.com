@@ -1,0 +1,104 @@
+<div data-bind="visible: active">
+    <section class="content-header">
+        <h1>Overview</h1>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box box-widget widget-user">
+                    <div class="widget-user-header bg-aqua-active">
+                        <h3 class="widget-user-username" data-bind="text: infos().name"></h3>
+                        <h5 class="widget-user-desc">
+                            Location: <span data-bind="text: infos().location"></span><br/>
+                            Company: <span data-bind="text: infos().company"></span>
+                        </h5>
+                    </div>
+                    <div class="widget-user-image">
+                        <img class="img-circle"
+                             src="https://avatars1.githubusercontent.com/u/9212?v=3&amp;s=128"
+                             alt="User Image"
+                        />
+                    </div>
+                    <div class="box-footer">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="description-block">
+                                    <h5 class="description-header" data-bind="text: infos().public_repos"></h5>
+                                    <span class="description-text">REPOSITORIES</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="description-block">
+                                    <h5 class="description-header" data-bind="text: infos().public_gists"></h5>
+                                    <span class="description-text">GISTS</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="description-block">
+                                    <h5 class="description-header" data-bind="text: infos().followers"></h5>
+                                    <span class="description-text">FOLLOWERS</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="description-block">
+                                    <h5 class="description-header" data-bind="text: infos().following"></h5>
+                                    <span class="description-text">FOLLOWING</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box box-widget">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Bio</h3>
+                    </div>
+                    <div class="box-body">
+                        <p data-bind="text: infos().bio"></p>
+                    </div>
+                    <div class="box-footer">
+                        Joined Github
+                        <span class="label label-default" data-bind="text: moment(infos().created_at).fromNow()">
+                        </span>
+                        -
+                        Updated account
+                        <span class="label label-default" data-bind="text: moment(infos().updated_at).fromNow()">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>GitHub Activity</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="timeline" data-bind="foreach: events">
+                    <li class="time-label">
+                        <span class="bg-red" data-bind="text: $data.timelabel"></span>
+                    </li>
+
+                    <!-- ko foreach: $data.items -->
+                    <li>
+                        <i data-bind="css: $data.icon"></i>
+                        <div class="timeline-item">
+                            <span class="time">
+                                <i class="fa fa-clock-o"></i>
+                                <span data-bind="text: $data.time"></span>
+                            </span>
+                            <h3 class="timeline-header" data-bind="html: $data.title"></h3>
+                            <div class="timeline-body" data-bind="html: $data.description"></div>
+                        </div>
+                    </li>
+                    <!-- /ko -->
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>

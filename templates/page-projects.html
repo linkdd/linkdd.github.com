@@ -1,0 +1,73 @@
+<div data-bind="visible: active">
+    <section class="content-header">
+        <h1>Projects</h1>
+    </section>
+
+    <section class="content" data-bind="foreach: projects">
+        <div class="row" data-bind="foreach: $data">
+            <div class="col-lg-3 col-xs-6">
+                <div class="box box-info direct-chat" data-bind="event: { mouseover: $parents[1].overBox, mouseout: $parents[1].outBox }">
+                    <div class="box-header with-border">
+                        <h3 class="box-title" data-bind="text: $data.full_name"></h3>
+
+                        <div class="box-tools pull-right">
+                            <a class="btn btn-box-tool" data-bind="attr: { href: $data.html_url }">
+                                <i class="glyphicon glyphicon-hand-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="box-body">
+                        <div class="direct-chat-messages">
+                            <p style="text-align: justify;" data-bind="text: $data.description"></p>
+                        </div>
+                    </div>
+
+                    <div class="box-footer no-padding">
+                        <table class="table">
+                            <tr>
+                                <td>Created</td>
+                                <td>
+                                    <span class="label label-default pull-right"
+                                          data-bind="text: moment($data.created_at).fromNow()">
+                                    </span>
+                                </td>
+
+                                <td>Forks</td>
+                                <td>
+                                    <span class="label label-warning pull-right" data-bind="text: $data.forks_count"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Last Updated</td>
+                                <td>
+                                    <span class="label label-default pull-right"
+                                          data-bind="text: moment($data.updated_at).fromNow()">
+                                    </span>
+                                </td>
+
+                                <td>Stargazers</td>
+                                <td>
+                                    <span class="label label-success pull-right" data-bind="text: $data.stargazers_count"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Last Push</td>
+                                <td>
+                                    <span class="label label-default pull-right"
+                                          data-bind="text: moment($data.pushed_at).fromNow()">
+                                    </span>
+                                </td>
+
+                                <td>Watchers</td>
+                                <td>
+                                    <span class="label label-info pull-right" data-bind="text: $data.watchers_count"></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
