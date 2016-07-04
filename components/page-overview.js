@@ -39,7 +39,7 @@ define([
                     description = '<ul>';
 
                     $.each(evt.payload.commits, function(idx, commit) {
-                        description += '<li><a href="' + commit.url + '">';
+                        description += '<li><a href="https://github.com/' + evt.repo.name + '/commit/' + commit.sha + '">';
                         description += '<span class="label label-success">' + commit.sha.slice(0, 7) + '</span> ';
                         description += commit.message + '</a>';
                         description += '</li>';
