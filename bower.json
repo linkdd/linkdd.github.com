@@ -24,6 +24,7 @@
     "knockout": "knockoutjs#^3.4.0",
     "sammy": "^0.7.6",
     "text": "requirejs-text#^2.0.15",
-    "moment": "^2.13.0"
+    "moment": "^2.13.0",
+    "octicons": "^4.3.0"
   }
 }

@@ -3,3 +3,18 @@
     margin: 0 auto;
     max-width: 100%;
 }
+
+.timeline > li > .octicon {
+  width: 30px;
+  height: 30px;
+  font-size: 17px;
+  line-height: 30px;
+  position: absolute;
+  color: #666;
+  background: #d2d6de;
+  border-radius: 50%;
+  text-align: center;
+  left: 18px;
+  paadding-left: 2px;
+  top: 0;
+}

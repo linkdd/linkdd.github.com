@@ -1,8 +1,9 @@
 define([
     'jquery',
     'ko',
+    'github-events',
     'text!templates/page-overview.html'
-], function($, ko, PageOverviewTemplate) {
+], function($, ko, GithubEventHandler, PageOverviewTemplate) {
     var PageOverviewViewModel = function(app, params) {
         var self = this;
 
@@ -20,63 +21,25 @@ define([
             var eventsByDate = {};
 
             $.each(events, function(idx, evt) {
-                var date = moment(evt.created_at).format('YYYY-MM-DD'),
-                    time = moment(evt.created_at).fromNow();
+                var handler = GithubEventHandler[evt.type];
 
-                if (!(date in eventsByDate)) {
-                    eventsByDate[date] = [];
-                }
+                if(handler !== undefined) {
+                    var date = moment(evt.created_at).format('YYYY-MM-DD'),
+                        time = moment(evt.created_at).fromNow();
 
-                var icon = 'fa fa-calendar-plus-o',
-                    title = '',
-                    description = '',
-                    repo_url = 'https://github.com/' + evt.repo.name;
+                    var result = handler(evt);
+                    result.time = time;
 
-                if (evt.type === 'PushEvent') {
-                    var nb_commit = evt.payload.commits.length;
-
-                    icon = 'fa fa-upload bg-green-active';
-                    title = 'Push ' + nb_commit + ' commit(s) ';
-                    title += 'on <a href="' + repo_url + '">' + evt.repo.name + '</a>';
-
-                    description = '<ul>';
-
-                    $.each(evt.payload.commits, function(idx, commit) {
-                        description += '<li><a href="' + repo_url + '/commit/' + commit.sha + '">';
-                        description += '<span class="label label-success">' + commit.sha.slice(0, 7) + '</span> ';
-                        description += commit.message + '</a>';
-                        description += '</li>';
-                    });
-
-                    description += '</ul>';
-                }
-                else if (evt.type === 'CreateEvent') {
-                    icon = 'fa fa-flag';
-
-                    if (evt.payload.ref_type == 'tag') {
-                        icon += ' bg-aqua';
-                        title = 'Create tag <span class="label label-warning">' + evt.payload.ref + '</span> ';
-                        title += 'on <a href="' + repo_url + '">' + evt.repo.name + '</a>';
-                    }
-                    else if(evt.payload.ref_type == 'branch') {
-                        icon += ' bg-purple';
-                        title = 'Create branch <span class="label label-warning">' + evt.payload.ref + '</span> ';
-                        title += 'on <a href="' + repo_url + '">' + evt.repo.name + '</a>';
-                    }
-                    else if(evt.payload.ref_type == 'repository') {
-                        icon = 'fa fa-code bg-red';
-                        title = 'Create repository <a href="' + repo_url + '">' + evt.repo.name + '</a>';
+                    if (!(date in eventsByDate)) {
+                        eventsByDate[date] = [];
                     }
 
-                    description = evt.payload.description;
+                    eventsByDate[date].push(result);
                 }
-
-                eventsByDate[date].push({
-                    icon: icon,
-                    time: time,
-                    title: title,
-                    description: description
-                });
+                else {
+                    console.error('Undefined event type:', evt.type);
+                    console.log('See: https://developer.github.com/v3/activity/events/types/#' + evt.type.toLowerCase());
+                }
             });
 
             var timeline = [];
