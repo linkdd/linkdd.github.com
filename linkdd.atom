@@ -4,8 +4,45 @@
   <link rel="alternate" type="text/html" href="https://linuxfr.org/users/linkdd"/>
   <link rel="self" type="application/atom+xml" href="https://linuxfr.org/users/linkdd.atom"/>
   <title>LinuxFr.org : les contenus de David Delassus</title>
-  <updated>2016-07-03T16:12:58+02:00</updated>
+  <updated>2016-09-22T07:49:47+02:00</updated>
   <icon>/favicon.png</icon>
+  <entry>
+    <id>tag:linuxfr.org,2005:Diary/36853</id>
+    <published>2016-09-20T09:57:38+02:00</published>
+    <updated>2016-09-20T09:57:38+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/users/linkdd/journaux/bookmark-faire-tourner-linux-sur-un-micro-controleur-8-bit"/>
+    <title>[Bookmark] Faire tourner Linux sur un micro-contrôleur 8-bit</title>
+    <rights>Licence CC by-sa http://creativecommons.org/licenses/by-sa/4.0/deed.fr</rights>
+    <content type="html">&lt;p&gt;Ah! Hackernews! On y voit passer de petites perles quand même.&lt;/p&gt;
+
+&lt;p&gt;Comme par exemple, ce matin, je tombe sur &lt;a href="https://dmitry.gr/index.php?r=05.Projects&amp;amp;proj=07.%20Linux%20on%208bit"&gt;cet article&lt;/a&gt; qui explique la démarche complète pour faire tourner une Ubuntu Jaunty (on est sur de la vieille version) sur un micro-contrôleur 8-bit, rien que ça !&lt;/p&gt;
+
+&lt;p&gt;Pour une petite traduction en mode TL;DR, il explique les prérequis pour pouvoir exécuter un noyau linux et booter une distribution :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CPU 32 bits, avec support du MMU (&lt;strong&gt;M&lt;/strong&gt;emory &lt;strong&gt;M&lt;/strong&gt;anagment &lt;strong&gt;U&lt;/strong&gt;nit, utilisé pour la pagination de la mémoire)&lt;/li&gt;
+&lt;li&gt;1 MB de RAM pour charger au moins le kernel&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;En utilisant :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;un micro-contrôleur ATmega1284p (6-7€)&lt;/li&gt;
+&lt;li&gt;une vieille barrette de RAM SIMM, utilisé à l'époque des processeurs 80286 (16Mo pour 5-6€)&lt;/li&gt;
+&lt;li&gt;une carte SD de 1GB (on trouve 16Go pour ~10€)&lt;/li&gt;
+&lt;li&gt;un peu de code pour émuler l'ARM sur le micro-contrôleur, afin de fournir le support du MMU&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Il arrive à un résultat, certes lent, mais très impressionnant ! 2h pour booter un bash (&lt;code&gt;init=/bin/bash&lt;/code&gt;) et plus de 4h pour booter la distribution complète (&lt;code&gt;exec init; login&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Là ou je trouve ce projet super intéressant, c'est qu'en plus d'être open source/open hardware, l'architecture est suffisamment simple pour pouvoir montrer le fonctionnement basique d'une carte mère.&lt;/p&gt;
+
+&lt;p&gt;Un DIY qui me semble peu chèr, que je vais très certainement essayer dans mon coin !&lt;/p&gt;&lt;div&gt;&lt;a href="https://linuxfr.org/users/linkdd/journaux/bookmark-faire-tourner-linux-sur-un-micro-controleur-8-bit.epub"&gt;Télécharger ce contenu au format Epub&lt;/a&gt;&lt;/div&gt;    &lt;p&gt;&lt;a href="https://linuxfr.org/users/linkdd/journaux/bookmark-faire-tourner-linux-sur-un-micro-controleur-8-bit#comments"&gt;Lire les commentaires&lt;/a&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>David Delassus</name>
+    </author>
+    <category term="8bit"/>
+    <category term="linux"/>
+    <category term="diy"/>
+    <wfw:commentRss>http://linuxfr.org/nodes/110074/comments.atom</wfw:commentRss>
+  </entry>
   <entry>
     <id>tag:linuxfr.org,2005:Diary/36703</id>
     <published>2016-07-03T16:12:58+02:00</published>
@@ -397,8 +434,10 @@ chiffre = /[0-9]/ ;
     <author>
       <name>David Delassus</name>
     </author>
-    <category term="python"/>
+    <category term="peg"/>
     <category term="bnf"/>
+    <category term="python"/>
+    <category term="packrat_parsing"/>
     <wfw:commentRss>http://linuxfr.org/nodes/109485/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -1507,19 +1546,19 @@ En fonction du type de job, ce dernier sera redirigé au moteur correspondant, q
       <name>palm123</name>
     </author>
     <author>
-      <name>Yvan Munoz</name>
+      <name>Xavier Claude</name>
     </author>
     <author>
-      <name>Xavier Claude</name>
+      <name>tankey</name>
     </author>
     <category term="Supervision"/>
     <category term="supervision"/>
-    <category term="python"/>
     <category term="monitoring"/>
     <category term="admin"/>
     <category term="hypervision"/>
     <category term="visualisation"/>
     <category term="canopsis"/>
+    <category term="javascript"/>
     <wfw:commentRss>http://linuxfr.org/nodes/108104/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -1620,8 +1659,8 @@ En fonction du type de job, ce dernier sera redirigé au moteur correspondant, q
     <author>
       <name>David Delassus</name>
     </author>
-    <category term="canopsis"/>
     <category term="python"/>
+    <category term="canopsis"/>
     <wfw:commentRss>http://linuxfr.org/nodes/108009/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -1654,11 +1693,11 @@ C'est simple, rapide, et pas casse-tête. On arrive facilement à un résultat u
       <name>David Delassus</name>
     </author>
     <category term="sso"/>
+    <category term="perl"/>
+    <category term="lemonldapcli"/>
     <category term="lemonldap"/>
     <category term="ldap"/>
     <category term="tty"/>
-    <category term="perl"/>
-    <category term="lemonldapcli"/>
     <wfw:commentRss>http://linuxfr.org/nodes/94711/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -1687,10 +1726,10 @@ serveur &lt;em&gt;SSH&lt;/em&gt;, etc&amp;#8230;&lt;/p&gt;
     <author>
       <name>David Delassus</name>
     </author>
-    <category term="fwallsh"/>
-    <category term="système"/>
     <category term="linux"/>
     <category term="administration"/>
+    <category term="fwallsh"/>
+    <category term="système"/>
     <wfw:commentRss>http://linuxfr.org/nodes/94461/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -1951,12 +1990,12 @@ serveur &lt;em&gt;SSH&lt;/em&gt;, etc&amp;#8230;&lt;/p&gt;
       <name>David Delassus</name>
     </author>
     <category term="web"/>
+    <category term="browser"/>
+    <category term="logiciel"/>
+    <category term="css"/>
     <category term="creambrowser"/>
     <category term="vim"/>
     <category term="gtk3"/>
-    <category term="lua"/>
-    <category term="browser"/>
-    <category term="logiciel"/>
     <wfw:commentRss>http://linuxfr.org/nodes/87526/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -2018,9 +2057,9 @@ tmpl.idx.bot=/path/to/your/index/footer.template
       <name>David Delassus</name>
     </author>
     <category term="perl"/>
-    <category term="generator"/>
     <category term="static"/>
     <category term="blog"/>
+    <category term="generator"/>
     <wfw:commentRss>http://linuxfr.org/nodes/86117/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -2043,11 +2082,11 @@ tmpl.idx.bot=/path/to/your/index/footer.template
     </author>
     <category term="dropbox"/>
     <category term="cloud"/>
+    <category term="nfs_en_moins_bien"/>
+    <category term="backup"/>
+    <category term="inutile"/>
+    <category term="android"/>
     <category term="sapucépalibre"/>
-    <category term="synchronisation"/>
-    <category term="propriétaire"/>
-    <category term="cloud_computing_pour_diçaïdeur_pressé"/>
-    <category term="donnees"/>
     <wfw:commentRss>http://linuxfr.org/nodes/85866/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -2145,9 +2184,9 @@ Example :
       <name>David Delassus</name>
     </author>
     <category term="Serveurs d'affichage"/>
-    <category term="window_manager"/>
     <category term="tiling"/>
     <category term="wm"/>
+    <category term="window_manager"/>
     <wfw:commentRss>http://linuxfr.org/nodes/85607/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -2259,11 +2298,11 @@ $ make
     </author>
     <category term="wmfs"/>
     <category term="tiling"/>
-    <category term="franglais"/>
-    <category term="x11"/>
     <category term="manager"/>
     <category term="logicielwmfs"/>
     <category term="window"/>
+    <category term="rho_la_hone_xlib"/>
+    <category term="franglais"/>
     <wfw:commentRss>http://linuxfr.org/nodes/85606/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -2331,10 +2370,10 @@ Vous avez sûrement vu sur des sites tels que &lt;code&gt;ubuntu-fr.org&lt;/code
     <category term="browser"/>
     <category term="vim"/>
     <category term="lua"/>
+    <category term="web"/>
     <category term="creambrowser"/>
     <category term="webkit"/>
     <category term="gtk3"/>
-    <category term="gtk"/>
     <wfw:commentRss>http://linuxfr.org/nodes/85594/comments.atom</wfw:commentRss>
   </entry>
 </feed>
