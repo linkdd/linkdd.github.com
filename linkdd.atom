@@ -4,8 +4,61 @@
   <link rel="alternate" type="text/html" href="https://linuxfr.org/users/linkdd"/>
   <link rel="self" type="application/atom+xml" href="https://linuxfr.org/users/linkdd.atom"/>
   <title>LinuxFr.org : les contenus de David Delassus</title>
-  <updated>2016-09-22T07:49:47+02:00</updated>
+  <updated>2016-10-18T11:49:58+02:00</updated>
   <icon>/favicon.png</icon>
+  <entry>
+    <id>tag:linuxfr.org,2005:Diary/36918</id>
+    <published>2016-10-18T11:49:58+02:00</published>
+    <updated>2016-10-18T11:49:58+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://linuxfr.org/users/linkdd/journaux/tentative-de-financement-participatif-pour-projet-opensource"/>
+    <title>Tentative de financement participatif pour projet OpenSource</title>
+    <rights>Licence CC by-sa http://creativecommons.org/licenses/by-sa/4.0/deed.fr</rights>
+    <content type="html">&lt;p&gt;Salut les moules!&lt;/p&gt;
+
+&lt;p&gt;Quittant la vie de salarié, je me lance dans l'indépendance la plus totale, et avec quelques amis lançons notre propre entreprise, en attendant, il faut bien manger.&lt;/p&gt;
+
+&lt;p&gt;C'est pourquoi aujourd'hui, je tente une nouvelle expérience : me faire financer pour développer un projet, pas seulement OpenSource, mais surtout libre.&lt;/p&gt;
+
+&lt;p&gt;J'ai quelques idées de projets, et compte les réaliser une à une durant cette première année sans revenu (du moins autre que les-dit projets).&lt;/p&gt;
+
+&lt;p&gt;La première de ces idées, qui est un peu à la base des autres, s'appelle &lt;strong&gt;CoNet&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id="conet-le-réseau-qui-vise-à-se-faire-connaître"&gt;CoNet, le réseau qui vise à se faire connaître&lt;/h2&gt;
+
+&lt;p&gt;Dernièrement (au moins plusieurs mois), quelques activités se sont lancées (ou sont en cours de lancement) dans ma ville (Lille) notamment :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;une instance de &lt;a href="https://wiki.nuitdebout.fr/wiki/Villes/Lille"&gt;Nuit Debout&lt;/a&gt; (n'y allant plus, je ne sais pas si c'est encore beaucoup fréquenté)&lt;/li&gt;
+&lt;li&gt;une instance de &lt;a href="http://duniter.org/"&gt;Duniter&lt;/a&gt; pour une monnaie libre lilloise&lt;/li&gt;
+&lt;li&gt;l'&lt;a href="http://oselille.org/"&gt;Open Source Ecology&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Cependant, il y a plein d'activités non listées, ou alors il est difficile d'avoir une vue d'ensemble sur ce qui se fait à Lille. Et ce travail de recherche pour juste être au courant, je vais devoir le refaire si je déménage dans une autre ville.&lt;/p&gt;
+
+&lt;p&gt;C'est comme ça qu'est né l'idée de &lt;strong&gt;CoNet&lt;/strong&gt;. Le but est simple :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;centraliser les informations sur les activités au sein d'une base de données&lt;/li&gt;
+&lt;li&gt;fournir une API pour redistribuer facilement ces données (principe de l'&lt;a href="https://fr.wikipedia.org/wiki/Open_data"&gt;Open Data&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;développer une application mobile et web pour accéder facilement à ces informations&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Chaque utilisateur pourra enrichir la base de données de &lt;strong&gt;CoNet&lt;/strong&gt;, ce qui permettra à n'importe quel utilisateur de pouvoir consulter à tout moment ce qu'il se passe dans sa ville.&lt;/p&gt;
+
+&lt;p&gt;S'il souhaite participer à une monnaie libre, il peut voir si elle existe déjà ou s'il faut qu'il lance lui même le mouvement.&lt;/p&gt;
+
+&lt;p&gt;Le financement que je souhaite obtenir me permettra de payer le serveur, manger, payer mon loyer, ce qui me permettra au final de développer cette application !&lt;/p&gt;
+
+&lt;p&gt;C'est une expérience qui, que le financement réussisse ou non, me sera très enrichissante.&lt;/p&gt;
+
+&lt;p&gt;Si le projet vous intéresse, je compte sur vous pour le bouche-à-oreilles.&lt;/p&gt;
+
+&lt;p&gt;Je n'oublie pas bien sûr le lien vers le projet sur &lt;a href="https://www.kickstarter.com/projects/1242441071/conet"&gt;Kickstarter&lt;/a&gt; ainsi que le &lt;a href="https://codoit.github.com/conet/"&gt;Github&lt;/a&gt;.&lt;/p&gt;&lt;div&gt;&lt;a href="https://linuxfr.org/users/linkdd/journaux/tentative-de-financement-participatif-pour-projet-opensource.epub"&gt;Télécharger ce contenu au format Epub&lt;/a&gt;&lt;/div&gt;    &lt;p&gt;&lt;a href="https://linuxfr.org/users/linkdd/journaux/tentative-de-financement-participatif-pour-projet-opensource#comments"&gt;Lire les commentaires&lt;/a&gt;&lt;/p&gt;
+</content>
+    <author>
+      <name>David Delassus</name>
+    </author>
+    <category term="crowdfunding"/>
+    <category term="opensource"/>
+    <wfw:commentRss>http://linuxfr.org/nodes/110304/comments.atom</wfw:commentRss>
+  </entry>
   <entry>
     <id>tag:linuxfr.org,2005:Diary/36853</id>
     <published>2016-09-20T09:57:38+02:00</published>
@@ -38,9 +91,9 @@
     <author>
       <name>David Delassus</name>
     </author>
+    <category term="diy"/>
     <category term="8bit"/>
     <category term="linux"/>
-    <category term="diy"/>
     <wfw:commentRss>http://linuxfr.org/nodes/110074/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -434,10 +487,10 @@ chiffre = /[0-9]/ ;
     <author>
       <name>David Delassus</name>
     </author>
-    <category term="peg"/>
-    <category term="bnf"/>
     <category term="python"/>
     <category term="packrat_parsing"/>
+    <category term="peg"/>
+    <category term="bnf"/>
     <wfw:commentRss>http://linuxfr.org/nodes/109485/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -1553,12 +1606,12 @@ En fonction du type de job, ce dernier sera redirigé au moteur correspondant, q
     </author>
     <category term="Supervision"/>
     <category term="supervision"/>
-    <category term="monitoring"/>
-    <category term="admin"/>
-    <category term="hypervision"/>
     <category term="visualisation"/>
     <category term="canopsis"/>
     <category term="javascript"/>
+    <category term="python"/>
+    <category term="monitoring"/>
+    <category term="admin"/>
     <wfw:commentRss>http://linuxfr.org/nodes/108104/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -1659,8 +1712,8 @@ En fonction du type de job, ce dernier sera redirigé au moteur correspondant, q
     <author>
       <name>David Delassus</name>
     </author>
-    <category term="python"/>
     <category term="canopsis"/>
+    <category term="python"/>
     <wfw:commentRss>http://linuxfr.org/nodes/108009/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -1693,11 +1746,11 @@ C'est simple, rapide, et pas casse-tête. On arrive facilement à un résultat u
       <name>David Delassus</name>
     </author>
     <category term="sso"/>
-    <category term="perl"/>
-    <category term="lemonldapcli"/>
     <category term="lemonldap"/>
     <category term="ldap"/>
     <category term="tty"/>
+    <category term="perl"/>
+    <category term="lemonldapcli"/>
     <wfw:commentRss>http://linuxfr.org/nodes/94711/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -1726,10 +1779,10 @@ serveur &lt;em&gt;SSH&lt;/em&gt;, etc&amp;#8230;&lt;/p&gt;
     <author>
       <name>David Delassus</name>
     </author>
-    <category term="linux"/>
-    <category term="administration"/>
     <category term="fwallsh"/>
     <category term="système"/>
+    <category term="linux"/>
+    <category term="administration"/>
     <wfw:commentRss>http://linuxfr.org/nodes/94461/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -1990,12 +2043,12 @@ serveur &lt;em&gt;SSH&lt;/em&gt;, etc&amp;#8230;&lt;/p&gt;
       <name>David Delassus</name>
     </author>
     <category term="web"/>
-    <category term="browser"/>
-    <category term="logiciel"/>
     <category term="css"/>
     <category term="creambrowser"/>
     <category term="vim"/>
     <category term="gtk3"/>
+    <category term="lua"/>
+    <category term="browser"/>
     <wfw:commentRss>http://linuxfr.org/nodes/87526/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -2057,9 +2110,9 @@ tmpl.idx.bot=/path/to/your/index/footer.template
       <name>David Delassus</name>
     </author>
     <category term="perl"/>
+    <category term="generator"/>
     <category term="static"/>
     <category term="blog"/>
-    <category term="generator"/>
     <wfw:commentRss>http://linuxfr.org/nodes/86117/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -2082,11 +2135,11 @@ tmpl.idx.bot=/path/to/your/index/footer.template
     </author>
     <category term="dropbox"/>
     <category term="cloud"/>
-    <category term="nfs_en_moins_bien"/>
-    <category term="backup"/>
-    <category term="inutile"/>
     <category term="android"/>
     <category term="sapucépalibre"/>
+    <category term="synchronisation"/>
+    <category term="propriétaire"/>
+    <category term="cloud_computing_pour_diçaïdeur_pressé"/>
     <wfw:commentRss>http://linuxfr.org/nodes/85866/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -2184,9 +2237,9 @@ Example :
       <name>David Delassus</name>
     </author>
     <category term="Serveurs d'affichage"/>
+    <category term="window_manager"/>
     <category term="tiling"/>
     <category term="wm"/>
-    <category term="window_manager"/>
     <wfw:commentRss>http://linuxfr.org/nodes/85607/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -2298,11 +2351,11 @@ $ make
     </author>
     <category term="wmfs"/>
     <category term="tiling"/>
-    <category term="manager"/>
-    <category term="logicielwmfs"/>
-    <category term="window"/>
     <category term="rho_la_hone_xlib"/>
     <category term="franglais"/>
+    <category term="x11"/>
+    <category term="manager"/>
+    <category term="logicielwmfs"/>
     <wfw:commentRss>http://linuxfr.org/nodes/85606/comments.atom</wfw:commentRss>
   </entry>
   <entry>
@@ -2367,13 +2420,13 @@ Vous avez sûrement vu sur des sites tels que &lt;code&gt;ubuntu-fr.org&lt;/code
     <author>
       <name>David Delassus</name>
     </author>
+    <category term="lua"/>
     <category term="browser"/>
     <category term="vim"/>
-    <category term="lua"/>
-    <category term="web"/>
     <category term="creambrowser"/>
     <category term="webkit"/>
     <category term="gtk3"/>
+    <category term="gtk"/>
     <wfw:commentRss>http://linuxfr.org/nodes/85594/comments.atom</wfw:commentRss>
   </entry>
 </feed>
